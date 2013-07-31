@@ -11,13 +11,13 @@ How to
 
 Use it with rails
 -----------------
-1. `gem 'fresh-jquery'` in your `Gemfile`
-2. `//= require jquery` or `//= require jquery.min` in your `application.js`
-3. Have your jquery as you like
+1. `gem 'fresh-backbone'` in your `Gemfile`
+2. `//= require` underscore, backbone and jquery from your `application.js`
+3. Have your backbone as you like
 
 Use it with sinatra
 -------------------
-1. `gem 'fresh-jquery'` in your `Gemfile`, yep
+1. `gem 'fresh-backbone'` in your `Gemfile`, yep
 2. `Gemfile` in your sinatra project:
   ```ruby
   source "https://rubygems.org"
@@ -26,7 +26,7 @@ Use it with sinatra
   gem "sinatra-asset-pipeline"
 
   gem "sprockets"    # This line should go before asset gems!
-  gem "fresh-jquery" # The gem you're trying to use
+  gem "fresh-backbone" # The gem you're trying to use
   ```
 
 3. In your sinatra application:
@@ -43,4 +43,4 @@ Use it with sinatra
   end
   ```
   
-4. Run application and have `/assets/jquery.js`!
+4. Run application and have backbone files!
